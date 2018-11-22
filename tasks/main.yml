@@ -26,11 +26,5 @@
   when: ansible_distribution == 'CentOS' or
         ansible_distribution == 'Red Hat Enterprise Linux' or
         ansible_distribution == 'RedHat'
-
-- name: Unlink default
-  file:
-    path: "/etc/systemd/system/default.target"
-    state: unlink
-    force: yes
   notify:
     - link gui

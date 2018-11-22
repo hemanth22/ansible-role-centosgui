@@ -14,6 +14,6 @@ galaxy_info:
     - development
     - system
     - centos
-    - GUI
-    - Gnome
+    - gui
+    - gnome
 dependencies: []
