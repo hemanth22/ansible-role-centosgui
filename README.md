@@ -1,7 +1,7 @@
-Role Name
+Ansible Role : centosgui
 =========
 
-CentOS Basic Gnome GUI Installer.
+CentOS Basic minium Gnome GUI Installer.
 
 Requirements
 ------------
@@ -23,9 +23,9 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
+    - hosts: root
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: username.rolename }
 
 License
 -------
