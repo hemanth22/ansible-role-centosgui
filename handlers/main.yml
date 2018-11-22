@@ -1,6 +1,6 @@
 ---
 # handlers file for hemanth22.centosgui
-- name: link GUI
+- name: link gui
   file:
     src: "/lib/systemd/system/graphical.target"
     dest: "/etc/systemd/system/default.target"
