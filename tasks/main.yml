@@ -1,0 +1,34 @@
+---
+# tasks file for hemanth22.centosgui
+- name: Install the 'X Window System' package group
+  yum:
+    name: "@X Window System"
+    state: present
+
+- name: Ensure a list of centos GUI packages installed
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - gnome-classic-session
+    - gnome-terminal
+    - nautilus
+    - nautilus-extensions
+    - nautilus-devel
+    - nautilus-sendto
+    - control-center
+  when: ansible_distribution == 'CentOS' or
+        ansible_distribution == 'Red Hat Enterprise Linux' or
+        ansible_distribution == 'RedHat'
+
+- name: Installing fonts.
+  yum: name=liberation-mono-fonts  state=present
+  when: ansible_distribution == 'CentOS' or
+        ansible_distribution == 'Red Hat Enterprise Linux' or
+        ansible_distribution == 'RedHat'
+
+- name: Unlink default
+  command: unlink /etc/systemd/system/default.target
+
+  notify:
+  - link GUI

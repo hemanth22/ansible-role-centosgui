@@ -1,0 +1,4 @@
+---
+# handlers file for hemanth22.centosgui
+- name: link GUI
+  command: ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target

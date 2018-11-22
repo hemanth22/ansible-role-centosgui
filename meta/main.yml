@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Hemanth BITRA
+  description: CentOS Basic Gnome GUI Installer.
+  company: No company.
+  issue_tracker_url: https://github.com/hemanth22/basicgui/issues
+  license: GPLv3
+  min_ansible_version: 1.2
+  platforms:
+    - name: EL
+      versions:
+        - all
+  galaxy_tags:
+    - development
+    - system
+    - sl
+dependencies: []
