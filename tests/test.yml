@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - hemanth22.centosgui
+    - hemanth22.ansible_role_centosgui
