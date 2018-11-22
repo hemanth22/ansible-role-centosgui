@@ -1,0 +1,29 @@
+---
+language: python
+services: docker
+
+env:
+  global:
+    - ROLE_NAME: sl
+  matrix:
+    - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO: centos6
+
+install:
+  - pip install molecule docker
+
+before_script:
+  - cd ../
+  - mv Ansible-role-$ROLE_NAME hemanth22.$ROLE_NAME
+  - cd hemanth22.$ROLE_NAME
+
+script:
+  - molecule test
+
+after_failure:
+  - wget -O createIssue.sh https://git.io/fx3KN
+  - chmod 777 createIssue.sh
+  - ./createIssue.sh
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
