@@ -10,13 +10,13 @@
     name: "{{ packages }}"
   vars:
     packages:
-    - gnome-classic-session
-    - gnome-terminal
-    - nautilus
-    - nautilus-extensions
-    - nautilus-devel
-    - nautilus-sendto
-    - control-center
+      - gnome-classic-session
+      - gnome-terminal
+      - nautilus
+      - nautilus-extensions
+      - nautilus-devel
+      - nautilus-sendto
+      - control-center
   when: ansible_distribution == 'CentOS' or
         ansible_distribution == 'Red Hat Enterprise Linux' or
         ansible_distribution == 'RedHat'
@@ -31,4 +31,4 @@
   command: unlink /etc/systemd/system/default.target
 
   notify:
-  - link GUI
+    - link GUI
