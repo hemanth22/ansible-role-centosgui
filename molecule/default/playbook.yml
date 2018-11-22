@@ -10,4 +10,4 @@
       changed_when: false
 
   roles:
-    - role: hemanth22.sl
+    - role: hemanth22.centosgui
