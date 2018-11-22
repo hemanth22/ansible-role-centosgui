@@ -1,4 +1,8 @@
 ---
 # handlers file for hemanth22.centosgui
 - name: link GUI
-  command: ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+  file:
+    src: "/lib/systemd/system/graphical.target"
+    dest: "/etc/systemd/system/default.target"
+    state: link
+    force: yes

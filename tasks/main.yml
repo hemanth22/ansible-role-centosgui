@@ -28,7 +28,9 @@
         ansible_distribution == 'RedHat'
 
 - name: Unlink default
-  command: unlink /etc/systemd/system/default.target
-
+  file:
+    path: "/etc/systemd/system/default.target"
+    state: unlink
+    force: yes
   notify:
     - link GUI
