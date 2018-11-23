@@ -9,7 +9,7 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - all
+        - 7
   galaxy_tags:
     - development
     - system
