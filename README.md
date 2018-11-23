@@ -1,6 +1,8 @@
 Ansible Role : centosgui
 =========
 
+[![Build Status](https://travis-ci.org/hemanth22/ansible-role-centosgui.svg?branch=master)](https://travis-ci.org/hemanth22/ansible-role-centosgui)
+
 CentOS Basic minium Gnome GUI Installer.
 
 Requirements
