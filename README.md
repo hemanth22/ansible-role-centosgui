@@ -1,5 +1,5 @@
 Ansible Role : centosgui
-=========
+========================
 
 [![Build Status](https://travis-ci.org/hemanth22/ansible-role-centosgui.svg?branch=master)](https://travis-ci.org/hemanth22/ansible-role-centosgui)
 
@@ -27,7 +27,12 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: root
       roles:
-         - { role: username.rolename }
+         - { role: hemanth22.ansible_role_centosgui }
+         
+Note:
+-----
+For testing ansible in your local system, i have added vagrantfile in test folder.
+After completion of test do a restart then your see centos in gui.
 
 License
 -------
