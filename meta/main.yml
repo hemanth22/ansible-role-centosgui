@@ -5,7 +5,7 @@ galaxy_info:
   company: No company.
   issue_tracker_url: https://github.com/hemanth22/ansible-role-centosgui/issues
   license: GPLv3
-  min_ansible_version: 1.2
+  min_ansible_version: 2.0
   platforms:
     - name: EL
       versions:
