@@ -25,9 +25,9 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: root
+    - hosts: localhost
       roles:
-         - { role: hemanth22.ansible_role_centosgui }
+        - hemanth22.ansible_role_centosgui
          
 Note:
 -----
