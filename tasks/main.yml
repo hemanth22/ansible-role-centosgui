@@ -4,6 +4,13 @@
   yum:
     name: "@X Window System"
     state: present
+  when: ansible_distribution == 'CentOS' or
+        ansible_distribution == 'Red Hat Enterprise Linux' or
+        ansible_distribution == 'RedHat'
+  register: xwin
+  until: xwin is success
+  retries: 100
+  delay: 2
 
 - name: Ensure a list of centos gui packages installed
   yum:
@@ -20,11 +27,19 @@
   when: ansible_distribution == 'CentOS' or
         ansible_distribution == 'Red Hat Enterprise Linux' or
         ansible_distribution == 'RedHat'
+  register: gnome
+  until: gnome is success
+  retries: 100
+  delay: 2
 
 - name: Installing fonts.
   yum: name=liberation-mono-fonts  state=present
   when: ansible_distribution == 'CentOS' or
         ansible_distribution == 'Red Hat Enterprise Linux' or
         ansible_distribution == 'RedHat'
+  register: fonte
+  until: fonte is success
+  retries: 100
+  delay: 2
   notify:
     - link gui
