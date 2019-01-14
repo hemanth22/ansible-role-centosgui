@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Hemanth BITRA
+  author: hemanth22
   description: CentOS basic gnome gui installer.
   company: No company.
   issue_tracker_url: https://github.com/hemanth22/ansible-role-centosgui/issues
