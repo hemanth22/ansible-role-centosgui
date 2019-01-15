@@ -27,7 +27,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: localhost
       roles:
-        - hemanth22.ansible_role_centosgui
+        - hemanth22.centosgui
          
 Note:
 -----
