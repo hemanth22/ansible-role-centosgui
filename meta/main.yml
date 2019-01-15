@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: centosgui
   author: hemanth22
   description: CentOS basic gnome gui installer.
   company: No company.
